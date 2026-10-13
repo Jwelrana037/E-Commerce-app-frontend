@@ -1,0 +1,91 @@
+/* Login Page */
+
+.login-card {
+  grid-template-columns: 0.9fr 1.1fr;
+}
+
+/* Login Form Layout */
+
+.login-card .auth-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+}
+
+.login-card .auth-form-heading {
+  margin-bottom: 35px;
+}
+
+.login-card .auth-form {
+  gap: 23px;
+}
+
+/* Remember Me and Forgot Password */
+
+.login-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.remember-me {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #64748b;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.remember-me input {
+  width: 15px;
+  height: 15px;
+  accent-color: #2563eb;
+  cursor: pointer;
+}
+
+.forgot-password-link {
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.forgot-password-link:hover {
+  text-decoration: underline;
+}
+
+/* Login Form Spacing */
+
+.login-card .auth-switch-text {
+  margin-top: 30px;
+}
+
+.login-card .auth-terms {
+  margin-top: 25px;
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+  .login-card {
+    grid-template-columns: 1fr;
+  }
+
+  .login-card .auth-form-container {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-card .auth-form-container {
+    padding: 25px 20px;
+  }
+
+  .login-options {
+    align-items: flex-start;
+  }
+}

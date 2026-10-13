@@ -1,0 +1,160 @@
+.admin-product-form-page {
+width: min(850px, 92%);
+margin: 40px auto;
+color: #172033;
+}
+
+.admin-form-heading {
+margin-bottom: 25px;
+}
+
+.admin-form-heading h1 {
+margin-bottom: 8px;
+font-size: clamp(28px, 4vw, 36px);
+}
+
+.admin-form-heading > p:last-child {
+color: #718096;
+line-height: 1.6;
+}
+
+.admin-form-card {
+padding: 30px;
+background: white;
+border: 1px solid #e9edf5;
+border-radius: 15px;
+box-shadow: 0 5px 20px rgb(15 23 42 / 4%);
+}
+
+.admin-form-group {
+display: flex;
+flex-direction: column;
+gap: 9px;
+margin-bottom: 22px;
+}
+
+.admin-form-group label {
+color: #334155;
+font-size: 14px;
+font-weight: 700;
+}
+
+.admin-form-group input,
+.admin-form-group select,
+.admin-form-group textarea {
+width: 100%;
+box-sizing: border-box;
+padding: 12px 14px;
+color: #172033;
+background: white;
+border: 1px solid #dbe2ea;
+border-radius: 9px;
+outline: none;
+font: inherit;
+}
+
+.admin-form-group textarea {
+resize: vertical;
+line-height: 1.6;
+}
+
+.admin-form-group input:focus,
+.admin-form-group select:focus,
+.admin-form-group textarea:focus {
+border-color: #2563eb;
+box-shadow: 0 0 0 3px rgb(37 99 235 / 10%);
+}
+
+.admin-form-row {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 20px;
+}
+
+.admin-form-error {
+margin-bottom: 22px;
+padding: 13px 15px;
+color: #b91c1c;
+background: #fee2e2;
+border-radius: 9px;
+font-size: 14px;
+}
+
+.admin-form-actions {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+gap: 12px;
+margin-top: 10px;
+}
+
+.admin-form-cancel,
+.admin-form-submit {
+display: inline-flex;
+justify-content: center;
+align-items: center;
+padding: 12px 20px;
+border-radius: 9px;
+font-size: 14px;
+font-weight: 700;
+text-decoration: none;
+cursor: pointer;
+}
+
+.admin-form-cancel {
+color: #475569;
+background: white;
+border: 1px solid #dbe2ea;
+}
+
+.admin-form-submit {
+color: white;
+background: #2563eb;
+border: 1px solid #2563eb;
+}
+
+.admin-form-submit:hover {
+background: #1d4ed8;
+}
+
+.admin-form-note {
+margin-top: 22px;
+color: #718096;
+font-size: 12px;
+line-height: 1.7;
+}
+
+.admin-form-back-link {
+display: inline-block;
+margin-top: 20px;
+color: #2563eb;
+text-decoration: none;
+font-weight: 700;
+}
+
+@media (max-width: 600px) {
+.admin-product-form-page {
+width: 94%;
+margin-top: 25px;
+}
+
+.admin-form-card {
+padding: 20px;
+}
+
+.admin-form-row {
+grid-template-columns: 1fr;
+gap: 0;
+}
+
+.admin-form-actions {
+align-items: stretch;
+flex-direction: column-reverse;
+}
+
+.admin-form-cancel,
+.admin-form-submit {
+width: 100%;
+box-sizing: border-box;
+}
+}

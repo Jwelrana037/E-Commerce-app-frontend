@@ -1,0 +1,292 @@
+/* Main Product Card */
+
+.product-card {
+  min-width: 0;
+  overflow: hidden;
+
+  border: 1px solid #e8edf4;
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 15px 30px rgb(15 23 42 / 8%);
+}
+
+/* Product Image Container */
+
+.product-card-image-wrapper {
+  position: relative;
+  overflow: hidden;
+
+  background: #f1f5f9;
+}
+
+/* Product Image */
+
+.product-card-image {
+  display: block;
+
+  width: 100%;
+  height: 230px;
+
+  object-fit: cover;
+
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-card-image {
+  transform: scale(1.05);
+}
+
+/* Product Badge */
+
+.product-card-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+
+  padding: 6px 9px;
+
+  border-radius: 5px;
+
+  background: #2563eb;
+  color: #ffffff;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+/* Discount Badge */
+
+.product-card-discount {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+
+  padding: 6px 9px;
+
+  border-radius: 5px;
+
+  background: #dc2626;
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+/* Wishlist Button */
+
+.product-card-wishlist {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #ffffff;
+  color: #172033;
+
+  font-size: 24px;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.product-card-wishlist:hover {
+  color: #dc2626;
+  transform: scale(1.1);
+}
+
+/* Product Information */
+
+.product-card-info {
+  padding: 18px;
+}
+
+/* Category */
+
+.product-card-category {
+  color: #64748b;
+
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Product Title */
+
+.product-card-title {
+  margin-top: 9px;
+
+  color: #172033;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+/* Product Description */
+
+.product-card-description {
+  margin-top: 8px;
+
+  color: #64748b;
+
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* Rating */
+
+.product-card-rating {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+
+  margin-top: 13px;
+
+  color: #475569;
+  font-size: 12px;
+}
+
+.product-card-rating > span:first-child {
+  color: #f59e0b;
+  font-size: 16px;
+}
+
+.rating-label {
+  color: #94a3b8;
+  font-size: 10px;
+}
+
+/* Prices */
+
+.product-card-prices {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin-top: 14px;
+}
+
+.product-card-price {
+  color: #2563eb;
+  font-size: 19px;
+}
+
+.product-card-old-price {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+/* Product Button */
+
+.product-card-button {
+  display: block;
+
+  margin-top: 18px;
+  padding: 12px;
+
+  border: 1px solid #2563eb;
+  border-radius: 7px;
+
+  background: #ffffff;
+  color: #2563eb;
+
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.product-card-button:hover {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+/* Responsive Design */
+
+@media (max-width: 700px) {
+  .product-card-image {
+    height: 190px;
+  }
+
+  .product-card-info {
+    padding: 14px;
+  }
+
+  .product-card-title {
+    font-size: 14px;
+  }
+
+  .product-card-price {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card-image {
+    height: 150px;
+  }
+
+  .product-card-info {
+    padding: 11px;
+  }
+
+  .product-card-description {
+    font-size: 11px;
+  }
+
+  .product-card-rating {
+    gap: 4px;
+  }
+
+  .rating-label {
+    display: none;
+  }
+
+  .product-card-prices {
+    gap: 6px;
+  }
+
+  .product-card-price {
+    font-size: 15px;
+  }
+
+  .product-card-old-price {
+    font-size: 11px;
+  }
+
+  .product-card-button {
+    padding: 10px 5px;
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,42 @@
+/* Main Page Layout */
+
+.page-container {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 60vh;
+
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* Page Heading */
+
+.page-container h1 {
+  margin-bottom: 20px;
+  color: #222222;
+  font-size: 36px;
+}
+
+/* Page Description */
+
+.page-container p {
+  color: #666666;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* Responsive Layout */
+
+@media (max-width: 600px) {
+  .page-container {
+    padding: 35px 18px;
+  }
+
+  .page-container h1 {
+    font-size: 28px;
+  }
+
+  .page-container p {
+    font-size: 15px;
+  }
+}
